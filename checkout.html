@@ -60,6 +60,10 @@
                 <li class="nav-item active"><a class="nav-link" href="checkout.html">Checkout</a></li>
 
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+				
+				<li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+				
+				<li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
             </ul>
           </div>
         </div>
@@ -83,72 +87,21 @@
     <div class="products call-to-action">
       <div class="container">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <div class="row">
-                  <div class="col-6">
-                       <em>Sub-total</em>
-                  </div>
-                  
-                  <div class="col-6 text-right">
-                       <strong>$ 128.00</strong>
-                  </div>
-             </div>
-          </li>
           
-          <li class="list-group-item">
-               <div class="row">
-                    <div class="col-6">
-                         <em>Extra</em>
-                    </div>
+          
+          
+          
 
-                    <div class="col-6 text-right">
-                         <strong>$ 0.00</strong>
-                    </div>
-               </div>
-          </li>
+          
 
-          <li class="list-group-item">
-               <div class="row">
-                    <div class="col-6">
-                         <em>Tax</em>
-                    </div>
-
-                    <div class="col-6 text-right">
-                         <strong>$ 10.00</strong>
-                    </div>
-               </div>
-          </li>
-
-          <li class="list-group-item">
-               <div class="row">
-                    <div class="col-6">
-                         <em>Total</em>
-                    </div>
-
-                    <div class="col-6 text-right">
-                         <strong>$ 138.00</strong>
-                    </div>
-               </div>
-          </li>
-
-          <li class="list-group-item">
-               <div class="row">
-                    <div class="col-6">
-                         <em>Deposit payment required</em>
-                    </div>
-
-                    <div class="col-6 text-right">
-                         <strong>$ 20.00</strong>
-                    </div>
-               </div>
-          </li>
+          
         </ul>
 
         <br>
         
         <div class="inner-content">
           <div class="contact-form">
-              <form action="#">
+              <form action="checkout.php">
                    <div class="row">
                         <div class="col-sm-6 col-xs-12">
                              <div class="form-group">
@@ -169,7 +122,7 @@
                         <div class="col-sm-6 col-xs-12">
                              <div class="form-group">
                                   <label class="control-label">Name:</label>
-                                  <input type="text" class="form-control">
+                                  <input name="name" type="text" class="form-control">
                              </div>
                         </div>
                    </div>
@@ -177,13 +130,13 @@
                         <div class="col-sm-6 col-xs-12">
                              <div class="form-group">
                                   <label class="control-label">Email:</label>
-                                  <input type="text" class="form-control">
+                                  <input name="email" type="text" class="form-control">
                              </div>
                         </div>
                         <div class="col-sm-6 col-xs-12">
                              <div class="form-group">
                                   <label class="control-label">Phone:</label>
-                                  <input type="text" class="form-control">
+                                  <input name="phone" type="text" class="form-control">
                              </div>
                         </div>
                    </div>
@@ -216,12 +169,7 @@
                         </div>
                    </div>
                    <div class="row">
-                        <div class="col-sm-6 col-xs-12">
-                             <div class="form-group">
-                                  <label class="control-label">Zip:</label>
-                                  <input type="text" class="form-control">
-                             </div>
-                        </div>
+                        
                         <div class="col-sm-6 col-xs-12">
                              <div class="form-group">
                                   <label class="control-label">Country:</label>
@@ -249,12 +197,7 @@
                              </div>
                         </div>
 
-                        <div class="col-sm-6 col-xs-12">
-                             <div class="form-group">
-                                  <label class="control-label">Captcha</label>
-                                  <input type="text" class="form-control">
-                             </div>
-                        </div>
+                        
                    </div>
 
                    <div class="form-group">
@@ -300,7 +243,7 @@
           </div>
           <div class="modal-body">
             <div class="contact-form">
-              <form action="#" id="contact">
+              <form action="checkout.php" id="contact">
                   <div class="row">
                        <div class="col-md-6">
                           <fieldset>
